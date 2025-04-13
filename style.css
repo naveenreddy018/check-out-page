@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid1 .address-card,
+.grid1 .order-summary {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  flex: 1;
+  min-height: 400px;
+}
+
+.grid2 .order-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+}
+
+.order-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.order-product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-details {
+  flex-grow: 1;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+}
+
+.quantity-controls input {
+  width: 60px;
+  text-align: center;
+}
+
+.pay-now-btn {
+  width: 100%;
+}
+
+.address-card .card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.radio-label {
+  font-weight: 600;
+}
+
+#newAddressForm .card {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#newAddressForm input.form-control,
+#newAddressForm .form-check-input {
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#newAddressForm .form-control::placeholder {
+  color: #999;
+}
+
+#newAddressForm .btn {
+  font-size: 14px;
+  padding: 6px 16px;
+  min-width: 120px;
+}
+
+@media (max-width: 991px) {
+  .order-product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-product img {
+    width: 100%;
+    height: auto;
+  }
+}
